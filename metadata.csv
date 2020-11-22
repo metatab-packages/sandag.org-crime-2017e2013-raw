@@ -14,28 +14,27 @@ Version.Major,1
 Version.Minor,1
 Version.Patch,1
 Created,2019-05-15T20:16:08
-Modified,2020-11-22T06:10:28
-Giturl,https://github.com/metatab-packages/sdrdl-data-repo.git
+Modified,2020-11-22T06:33:52
+Giturl,https://github.com/metatab-packages/sandag.org-crime-2017e2013-raw.git
 ""
 Section,Contacts,Email,Organization,Url
 Wrangler,Eric Busboom,eric@sandiegodata.org,San Diego Regional Data Library,http://sandiegodata.org
 ""
 Section,Documentation,Title,Description,
-Note,This package was automatically created from a CKAN repository,,,
 Documentation,file:README.md,README,,
 ""
 Section,References,Name,Description,
 ""
 Section,Resources,Name,Description,
-Datafile,http://ds.civicknowledge.org/sandag.org/crime-r2/SANDAG%20Crime%20Incidents%20R2%202007.csv.gz,sandag-crime-incidents-2007,SANDAG Crime Incidents 2007,
-Datafile,http://ds.civicknowledge.org/sandag.org/crime-r2/SANDAG%20Crime%20Incidents%20R2%202008.csv.gz,sandag-crime-incidents-2008,SANDAG Crime Incidents 2008,
-Datafile,http://ds.civicknowledge.org/sandag.org/crime-r2/SANDAG%20Crime%20Incidents%20R2%202009.csv.gz,sandag-crime-incidents-2009,SANDAG Crime Incidents 2009,
-Datafile,http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/crime-r2/SANDAG%20Crime%20Incidents%20R2%202007.csv.zip,sandag-crime-incidents-2007,SANDAG Crime Incidents 2007,
-Datafile,http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/crime-r2/SANDAG%20Crime%20Incidents%20R2%202008.csv.zip,sandag-crime-incidents-2008,SANDAG Crime Incidents 2008,
-Datafile,http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/crime-r2/SANDAG%20Crime%20Incidents%20R2%202009.csv.zip,sandag-crime-incidents-2009,SANDAG Crime Incidents 2009,
-Datafile,http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/crime-r2/SANDAG%20Crime%20Incidents%20R2%202010.csv.zip,sandag-crime-incidents-2010,SANDAG Crime Incidents 2010,
-Datafile,http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/crime-r2/SANDAG%20Crime%20Incidents%20R2%202011.csv.zip,sandag-crime-incidents-2011,SANDAG Crime Incidents 2011,
-Datafile,http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/crime-r2/SANDAG%20Crime%20Incidents%20R2%202012.csv.zip,sandag-crime-incidents-2012,SANDAG Crime Incidents 2012,
-Datafile,http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/crime-r2/SANDAG%20Crime%20Incidents%20R2%202013.csv.zip,sandag-crime-incidents-2013,SANDAG Crime Incidents 2013,
+Datafile,data/crime.csv.zip,crime_2007_2013,"San Diego crime incidents, 2007 to 2013",
 ""
-Section,Schema,DataType,AltName,Description
+Section,Schema,DataType,Description,,
+Table,crime_2007_2013,,,,
+Table.Column,activitytype,string,,,
+Table.Column,agency,string,,,
+Table.Column,activitydate,datetime,,,
+Table.Column,legend,string,,,
+Table.Column,charge_description,string,,,
+Table.Column,block_address,text,,,
+Table.Column,city_name,string,,,
+Table.Column,zipcode,integer,,,
